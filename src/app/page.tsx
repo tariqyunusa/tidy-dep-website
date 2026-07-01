@@ -10,7 +10,6 @@ export default function Home() {
         <Steps />
         <DiffSection />
         <AuditSection />
-        <InstallSection />
       </main>
       <Footer />
     </>
@@ -103,7 +102,8 @@ function Hero() {
             </div>
           </dl>
         </div>
-        <TerminalDemo />
+        {/* <TerminalDemo /> */}
+        <InstallSection />
       </div>
     </section>
   );
@@ -312,13 +312,13 @@ function InstallSection() {
   return (
     <section id="install" className="border-t border-paper-line">
       <div className="mx-auto max-w-5xl px-6 py-20">
-        <h2 className="font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">
+        {/* <h2 className="font-display text-2xl font-bold tracking-tight text-ink sm:text-3xl">
           Run it once. No install required.
-        </h2>
-        <p className="mt-3 max-w-lg font-body text-ink-dim">
+        </h2> */}
+        {/* <p className="mt-3 max-w-lg font-body text-ink-dim">
           tidy-deps is built to run with your package manager&apos;s
           execute-on-demand command — nothing to add to your project.
-        </p>
+        </p> */}
         <div className="mt-8">
           <InstallTabs />
         </div>
